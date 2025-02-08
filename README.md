@@ -27,7 +27,7 @@ This project was created using the following technologies:
 Here is a preview of how the widget will look when you run "index.html"
 (once added to your scene, the widget will be transparent)
 
-![Widget Preview](widget/assets/Preview.PNG)
+![Widget Preview](assets/Preview.PNG)
 
 ## How to Use
 
