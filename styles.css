@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: green;
+}
+
+#image {
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    filter: blur(20px);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#contenedor {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 200px;
+    border-radius: 60px;
+    overflow: hidden;
+    box-shadow:inset 0 0 0 13px white;
+    
+
+    
+}
+
+#album {
+    font-size: 50px;
+    font-family: 'rubik', sans-serif;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+#artist {
+    font-size: 50px;
+    font-family: 'rubik', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+}
