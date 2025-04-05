@@ -44,7 +44,7 @@ function refreshContent() {
                     lastTrack = { songName: songName, artist: artist, image: albumImage };
 
                     document.getElementById('artist').innerText = artist;
-                    document.getElementById('album').innerText = songName;
+                    document.getElementById('song').innerText = songName;
 
                     const imgElemento = document.getElementById('image');
                     if (albumImage !== imgElemento.src) {
@@ -53,14 +53,14 @@ function refreshContent() {
                 }
             } else {
                 document.getElementById('artist').innerText = "Couldn't get recent scrobbles.";
-                document.getElementById('album').innerText = "";
+                document.getElementById('song').innerText = "";
                 document.getElementById('image').src = defaultImage;
             }
         })
         .catch(error => {
             console.error('Error al obtener los scrobbles:', error);
             document.getElementById('artist').innerText = "Couldn't get recent scrobbles.";
-            document.getElementById('album').innerText = "";
+            document.getElementById('song').innerText = "";
             document.getElementById('image').src = defaultImage;
         });
 }
