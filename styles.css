@@ -4,45 +4,58 @@ body {
     background-color: green;
 }
 
-#image {
+#image { /* BACKGROUND IMAGE */
     width: 800px;
     height: 200px;
     text-align: center;
-    filter: blur(20px);
+    vertical-align: center;
+    background-color: rgba(0,0,0,0.4);
+    background: linear-gradient(110px, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('https://i.pinimg.com/originals/4c/8f/9b/4c8f9b2a3d5e6a7d2e3f5a2b7e3f5a2b.jpg') no-repeat center center;
     object-fit: cover;
+    filter: blur(25px);
     border-radius: 10px;
+
 }
 
-#contenedor {
+#contenedor { /* IMAGE, ARTIST AND ALBUM */
     position: relative;
     display: flex;
     width: 800px;
     height: 200px;
-    border-radius: 60px;
+    border-radius: 40px;
+    border: 0.5px solid rgb(215, 203, 225);
+    background-color: rgba(255,255,255,0.12);
+    filter: frosted-glass(0.2);
+   
     overflow: hidden;
     box-shadow:inset 0 0 0 13px white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: center;
+
     
 
     
 }
 
-#album {
+#song { /* Song name */
     font-size: 50px;
     font-family: 'rubik', sans-serif;
     font-weight: bold;
-    color: white;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 30px;
     left: 40px;
 }
 
-#artist {
+#artist { /* Artist name */
     font-size: 50px;
     font-family: 'rubik', sans-serif;
-    font-weight: bold;
+    font-weight: semi-bold;
     font-style: italic;
-    color: white;
-    position: absolute;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);    position: absolute;
     top: 110px;
     left: 40px;
 }
